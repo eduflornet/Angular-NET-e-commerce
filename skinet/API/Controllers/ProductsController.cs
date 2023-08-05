@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Core.Entities;
 using Infrastructure;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +27,19 @@ namespace API.Controllers
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
             return Ok(await _context.Products.FindAsync(id));
+        }
+        
+        [HttpGet("brands")]
+        public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands()
+        {
+            return Ok(await _context.ProductBrands.ToListAsync());
+        }
+
+        
+        [HttpGet("types")]
+        public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductTypes()
+        {
+            return Ok(await _context.ProductTypes.ToListAsync());
         }
     }
 }
