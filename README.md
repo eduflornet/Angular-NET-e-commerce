@@ -1,5 +1,6 @@
 ## Patterns
 - [Repository and Unit of Work Patterns in .NET Core](https://www.linkedin.com/pulse/repository-unit-work-patterns-net-core-dimitar-iliev/)
+- [Specification Pattern in C#](https://www.linkedin.com/pulse/specification-pattern-c-collins-ezerioha/)
 ## Entity Framework Core
 
 - [IEntityTypeConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.ientitytypeconfiguration-1?view=efcore-7.0) allows configuration for an entity type to be factored into a separate class, rather than in-line in
